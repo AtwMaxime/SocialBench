@@ -76,6 +76,16 @@ All Python dependencies are installed automatically on first `bash run_pipeline.
 
 Place raw datasets in `dataset/`. Only datasets that are present will be built — the rest are silently skipped.
 
+**11 datasets can be downloaded automatically:**
+
+```bash
+bash download_datasets.sh                        # download all available
+bash download_datasets.sh gazefollow vocalsound  # or pick specific ones
+bash download_datasets.sh --list                 # see what's available
+```
+
+The following 5 datasets require a manual registration or license request and cannot be automated: **AffWild2**, **EMOTIC**, **MSP-Podcast**, **MMEW**, **VideoCoAttention**. Download instructions are below.
+
 ---
 
 ### GazeFollow
