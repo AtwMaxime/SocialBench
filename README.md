@@ -1,12 +1,37 @@
 # SocialBench
 
-SocialBench is a multimodal benchmark for evaluating social scene understanding in large language models. It covers **16 datasets** and **30 evaluation tasks** across three cognitive levels, from low-level perception to Theory of Mind reasoning. The radar charts visualize **28 tasks** (the 2 L1 tasks without a published SOTA reference — VoxConverse speaker counting and MMEW AU apex — are evaluated and reported in the results tables but excluded from the radar).
+**SocialBench** is a multimodal benchmark for social scene understanding in MLLMs. It spans 16 datasets and 30 tasks organized across three cognitive levels: Perception (L1), Understanding (L2), and Theory of Mind (L3). Radar charts cover 28 of these tasks (VoxConverse speaker counting and MMEW AU apex are reported in the results tables but excluded from the radar as they have no published SOTA reference).
 
-This repository provides:
-- A **bring-your-own-data pipeline** to convert raw datasets into a unified Parquet format
-- **MS-Swift plugins** for training and zero-shot evaluation
-- **Evaluation scripts** to compute metrics from model predictions
-- **Pre-computed results** and plotting scripts to reproduce the paper figures
+This repo contains the data pipeline, MS-Swift plugins, evaluation scripts, and pre-computed results from the paper.
+
+## Table of Contents
+
+- [Benchmark Overview](#benchmark-overview)
+- [Quickstart](#quickstart)
+- [Prerequisites](#prerequisites)
+- [Step 1 — Download Datasets](#step-1--download-datasets)
+  - [GazeFollow](#gazefollow)
+  - [VideoAttentionTarget (VAT)](#videoattentiontarget-vat)
+  - [VideoCoAttention](#videocoattention)
+  - [VocalSound](#vocalsound)
+  - [Proxemics](#proxemics)
+  - [MMEW](#mmew)
+  - [AffWild2](#affwild2)
+  - [VoxConverse](#voxconverse)
+  - [MELD](#meld)
+  - [EMOTIC](#emotic)
+  - [PISC](#pisc)
+  - [MSP-Podcast](#msp-podcast)
+  - [MUStARD](#mustard)
+  - [UR-FUNNY](#ur-funny)
+  - [RLDD](#rldd)
+  - [MEVIEW](#meview-test-only)
+- [Step 2 — Build Parquet Files](#step-2--build-parquet-files)
+- [Step 3 — Zero-Shot Evaluation](#step-3--zero-shot-evaluation)
+- [Step 4 — Compute Metrics](#step-4--compute-metrics)
+- [Step 5 — Plot Results](#step-5--plot-results)
+- [Fine-Tuning](#fine-tuning)
+- [Parquet Schema](#parquet-schema)
 
 ---
 
