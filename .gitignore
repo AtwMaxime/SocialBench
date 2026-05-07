@@ -1,0 +1,33 @@
+# Raw datasets — download yourself
+dataset/
+
+# Generated Parquet files — built locally
+parquets/
+
+# Python virtual environment
+.venv_dataset/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Generated radar plots
+results/**/*.pdf
+
+# Claude Code project settings
+.claude/
+CLAUDE.md
+
+# Social-IQ challenge folder (external repo, not part of pipeline)
+Social-IQ-2.0-Challenge-main/
+
+# Planning / scratch files
+Datasets.pdf
+download_ava.py
+
+# OS
+.DS_Store
+Thumbs.db

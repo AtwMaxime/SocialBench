@@ -1,0 +1,631 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-27T12:29:45.405489+00:00",
+    "pred_dir": "/home/mattwood/mnt_jeanzay/gazeVLM/output/results_benchmark/Qwen3-Omni",
+    "datasets_dir": "/home/mattwood/mnt_jeanzay/gazeVLM/hf_datasets"
+  },
+  "results": {
+    "affwild2-omni_au_val": {
+      "n_samples": 2804,
+      "n_valid": 2801,
+      "n_metric_valid": 2801,
+      "n_parse_failures": 3,
+      "format_compliance_rate": 0.9989,
+      "metrics": {
+        "f1_AU1": 0.4651866801210898,
+        "f1_AU2": 0.27023581899298915,
+        "f1_AU4": 0.46841294298921415,
+        "f1_AU6": 0.3040473840078973,
+        "f1_AU7": 0.4712856613560578,
+        "f1_AU10": 0.4534351145038168,
+        "f1_AU12": 0.5637785800240674,
+        "f1_AU15": 0.1386861313868613,
+        "f1_AU23": 0.24302788844621515,
+        "f1_AU24": 0.13196480938416422,
+        "f1_AU25": 0.8132516451100522,
+        "f1_AU26": 0.3945178658835046,
+        "macro_au_f1": 0.39315254351716084
+      },
+      "parse_failure_pct": 0.1
+    },
+    "affwild2-omni_expr-think_val": {
+      "n_samples": 224,
+      "n_valid": 224,
+      "n_metric_valid": 224,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "macro_f1": 0.4088560128475494,
+        "f1_neutral": 0.7083333333333334,
+        "f1_anger": 0.5555555555555556,
+        "f1_disgust": 0.3,
+        "f1_fear": 0.34782608695652173,
+        "f1_happiness": 0.6842105263157895,
+        "f1_sadness": 0.2631578947368421,
+        "f1_surprise": 0.4117647058823529,
+        "f1_other": 0.0
+      },
+      "parse_failure_pct": 0.0
+    },
+    "affwild2-omni_expr_val": {
+      "n_samples": 1028,
+      "n_valid": 1028,
+      "n_metric_valid": 1028,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "macro_f1": 0.12598238942142673,
+        "f1_neutral": 0.3007518796992481,
+        "f1_anger": 0.0,
+        "f1_disgust": 0.10909090909090909,
+        "f1_fear": 0.10638297872340426,
+        "f1_happiness": 0.2682926829268293,
+        "f1_sadness": 0.028368794326241134,
+        "f1_surprise": 0.1527777777777778,
+        "f1_other": 0.04219409282700422
+      },
+      "parse_failure_pct": 0.0
+    },
+    "affwild2-omni_va_val": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "ccc_valence": 0.3689575203782895,
+        "ccc_arousal": 0.4077904077625937,
+        "ccc_mean": 0.38837396407044156
+      },
+      "parse_failure_pct": 0.0
+    },
+    "emotic-vlm_discrete_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "ap_affection": 0.28700555571249664,
+        "f1_affection": 0.4133099824868651,
+        "ap_anger": 0.209,
+        "f1_anger": 0.37623762376237624,
+        "ap_annoyance": 0.099985725985726,
+        "f1_annoyance": 0.2311111111111111,
+        "ap_anticipation": 0.48912449025194127,
+        "f1_anticipation": 0.17288557213930347,
+        "ap_aversion": 0.07214965986394557,
+        "f1_aversion": 0.0784313725490196,
+        "ap_confidence": 0.5746786286778014,
+        "f1_confidence": 0.5878078320549052,
+        "ap_disapproval": 0.09152860568687907,
+        "f1_disapproval": 0.2242152466367713,
+        "ap_disconnection": 0.20140297138664712,
+        "f1_disconnection": 0.18996415770609318,
+        "ap_disquietment": 0.13390426922858278,
+        "f1_disquietment": 0.12691466083150985,
+        "ap_doubt_confusion": 0.15635749616237424,
+        "f1_doubt_confusion": 0.03017241379310345,
+        "ap_embarrassment": 0.017,
+        "f1_embarrassment": 0.0,
+        "ap_engagement": 0.8102589407727196,
+        "f1_engagement": 0.6156378600823045,
+        "ap_esteem": 0.12948038490007402,
+        "f1_esteem": 0.010178117048346057,
+        "ap_excitement": 0.597101214046386,
+        "f1_excitement": 0.6367781155015197,
+        "ap_fatigue": 0.11255932203389829,
+        "f1_fatigue": 0.23346303501945526,
+        "ap_fear": 0.06939261418853256,
+        "f1_fear": 0.18571428571428572,
+        "ap_happiness": 0.6690920341666394,
+        "f1_happiness": 0.6629261976694001,
+        "ap_pain": 0.15109901738473167,
+        "f1_pain": 0.3619047619047619,
+        "ap_peace": 0.20270338322912063,
+        "f1_peace": 0.23809523809523808,
+        "ap_pleasure": 0.2936141461013851,
+        "f1_pleasure": 0.05077262693156733,
+        "ap_sadness": 0.26292540057788283,
+        "f1_sadness": 0.4609375,
+        "ap_sensitivity": 0.027666666666666666,
+        "f1_sensitivity": 0.0,
+        "ap_suffering": 0.27925252525252525,
+        "f1_suffering": 0.5026178010471204,
+        "ap_surprise": 0.1336308439587128,
+        "f1_surprise": 0.2100456621004566,
+        "ap_sympathy": 0.10451794206658019,
+        "f1_sympathy": 0.05263157894736842,
+        "ap_yearning": 0.06377304964539007,
+        "f1_yearning": 0.02,
+        "mAP": 0.23996941876721692,
+        "mean_jaccard": 0.30674261664261665
+      },
+      "parse_failure_pct": 0.0
+    },
+    "emotic-vlm_vad_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "aae_valence": 1.0827,
+        "aae_arousal": 1.4490888888888889,
+        "aae_dominance": 1.5671777777777776,
+        "aae_mean": 1.3663222222222224
+      },
+      "parse_failure_pct": 0.0
+    },
+    "gazefollow-vlm_val": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "min_dist": 0.14085848726729738,
+        "avg_dist": 0.22986990374649902,
+        "auc": 0.8004006104163182,
+        "min_angular_error": 24.87561286775895,
+        "avg_angular_error": 40.74762692450447
+      },
+      "parse_failure_pct": 0.0
+    },
+    "meld-omni_audio-only_test": {
+      "n_samples": 2602,
+      "n_valid": 2602,
+      "n_metric_valid": 2602,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "weighted_f1": 0.5373815774756695,
+        "macro_f1": 0.4110325665018264,
+        "f1_anger": 0.4742268041237113,
+        "f1_disgust": 0.23622047244094488,
+        "f1_fear": 0.25263157894736843,
+        "f1_joy": 0.47324613555291317,
+        "f1_neutral": 0.6596902469652575,
+        "f1_sadness": 0.3860759493670886,
+        "f1_surprise": 0.3951367781155015
+      },
+      "parse_failure_pct": 0.0
+    },
+    "meld-omni_video-audio_test": {
+      "n_samples": 2602,
+      "n_valid": 2601,
+      "n_metric_valid": 2601,
+      "n_parse_failures": 1,
+      "format_compliance_rate": 0.9996,
+      "metrics": {
+        "weighted_f1": 0.5336828655056718,
+        "macro_f1": 0.40140604649788697,
+        "f1_anger": 0.4921968787515006,
+        "f1_disgust": 0.1782178217821782,
+        "f1_fear": 0.21739130434782608,
+        "f1_joy": 0.4845814977973568,
+        "f1_neutral": 0.6455256298870548,
+        "f1_sadness": 0.38283828382838286,
+        "f1_surprise": 0.4090909090909091
+      },
+      "parse_failure_pct": 0.0
+    },
+    "meld-omni_video-transcript_test": {
+      "n_samples": 2579,
+      "n_valid": 2579,
+      "n_metric_valid": 2579,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "weighted_f1": 0.3164006065032395,
+        "macro_f1": 0.18689945281857342,
+        "f1_anger": 0.17777777777777778,
+        "f1_disgust": 0.09917355371900827,
+        "f1_fear": 0.08391608391608392,
+        "f1_joy": 0.2334096109839817,
+        "f1_neutral": 0.4793459552495697,
+        "f1_sadness": 0.10461538461538461,
+        "f1_surprise": 0.13005780346820808
+      },
+      "parse_failure_pct": 0.0
+    },
+    "mmew_apex-au_val": {
+      "n_samples": 56,
+      "n_valid": 56,
+      "n_metric_valid": 56,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "f1_AU1": 0.0,
+        "f1_AU2": 0.0,
+        "f1_AU4": 0.2857142857142857,
+        "f1_AU5": 0.0,
+        "f1_AU6": 0.0,
+        "f1_AU7": 0.0,
+        "f1_AU9": 0.0,
+        "f1_AU10": 0.0,
+        "f1_AU12": 0.0,
+        "f1_AU14": 0.0,
+        "f1_AU15": 0.0,
+        "f1_AU17": 0.0,
+        "f1_AU24": 0.0,
+        "macro_au_f1": 0.021978021978021976
+      },
+      "parse_failure_pct": 0.0
+    },
+    "mmew_apex-emotion_val": {
+      "n_samples": 236,
+      "n_valid": 236,
+      "n_metric_valid": 236,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.22033898305084745,
+        "macro_f1": 0.2057203573597016,
+        "uar": 0.30097455648926236,
+        "f1_happiness": 0.819672131147541,
+        "f1_surprise": 0.37037037037037035,
+        "f1_disgust": 0.0,
+        "f1_fear": 0.0,
+        "f1_sadness": 0.15,
+        "f1_anger": 0.0,
+        "f1_others": 0.1
+      },
+      "parse_failure_pct": 0.0
+    },
+    "mmew_clip-emotion-think_val": {
+      "n_samples": 56,
+      "n_valid": 56,
+      "n_metric_valid": 56,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.21428571428571427,
+        "macro_f1": 0.07322068612391194,
+        "uar": 0.16071428571428573,
+        "f1_happiness": 0.0,
+        "f1_surprise": 0.2222222222222222,
+        "f1_disgust": 0.0,
+        "f1_fear": 0.0,
+        "f1_sadness": 0.0,
+        "f1_anger": 0.0,
+        "f1_others": 0.2903225806451613
+      },
+      "parse_failure_pct": 0.0
+    },
+    "mmew_clip-emotion_val": {
+      "n_samples": 56,
+      "n_valid": 56,
+      "n_metric_valid": 56,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.23214285714285715,
+        "macro_f1": 0.08367346938775509,
+        "uar": 0.16666666666666669,
+        "f1_happiness": 0.0,
+        "f1_surprise": 0.2857142857142857,
+        "f1_disgust": 0.0,
+        "f1_fear": 0.0,
+        "f1_sadness": 0.0,
+        "f1_anger": 0.0,
+        "f1_others": 0.3
+      },
+      "parse_failure_pct": 0.0
+    },
+    "msppodcast-omni_labels_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "weighted_f1": 0.6319614017020914,
+        "macro_f1": 0.1929763450384816,
+        "f1_neutral": 0.7801601653319555,
+        "f1_happiness": 0.0,
+        "f1_anger": 0.0,
+        "f1_sadness": 0.0,
+        "f1_surprise": 0.25842696629213485,
+        "f1_fear": 0.3333333333333333,
+        "f1_disgust": 0.24858757062146894,
+        "f1_contempt": 0.11627906976744186,
+        "f1_other": 0.0
+      },
+      "parse_failure_pct": 0.0
+    },
+    "msppodcast-omni_vad_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "ccc_arousal": 0.3812825310570247,
+        "ccc_valence": 0.4514860261850869,
+        "ccc_dominance": 0.12038158803318337,
+        "ccc_mean": 0.31771671509176497
+      },
+      "parse_failure_pct": 0.0
+    },
+    "mustard-omni_video-context_test": {
+      "n_samples": 138,
+      "n_valid": 138,
+      "n_metric_valid": 138,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.5507246376811594,
+        "weighted_f1": 0.5394927536231883,
+        "macro_f1": 0.5429487179487179,
+        "precision": 0.6170212765957447,
+        "recall": 0.3972602739726027
+      },
+      "parse_failure_pct": 0.0
+    },
+    "mustard-omni_video-no-context_test": {
+      "n_samples": 138,
+      "n_valid": 138,
+      "n_metric_valid": 138,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.5217391304347826,
+        "weighted_f1": 0.42245729813664595,
+        "macro_f1": 0.43526785714285715,
+        "precision": 0.8181818181818182,
+        "recall": 0.1232876712328767
+      },
+      "parse_failure_pct": 0.0
+    },
+    "pisc-vlm_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.6776666666666666,
+        "macro_f1": 0.6347187573027714,
+        "ap_friends": 0.6015854460149803,
+        "recall_friends": 0.8746835443037975,
+        "f1_friends": 0.7458175930922828,
+        "ap_family": 0.6887937734348369,
+        "recall_family": 0.8197932053175776,
+        "f1_family": 0.8049311094996374,
+        "ap_couple": 0.5840828146611342,
+        "recall_couple": 0.7265625,
+        "f1_couple": 0.7484909456740443,
+        "ap_professional": 0.146266529398307,
+        "recall_professional": 0.4645161290322581,
+        "f1_professional": 0.3295194508009153,
+        "ap_commercial": 0.4362677570401636,
+        "recall_commercial": 0.5254237288135594,
+        "f1_commercial": 0.6088379705400983,
+        "ap_no_relation": 0.4946362567204301,
+        "recall_no_relation": 0.4466145833333333,
+        "f1_no_relation": 0.5707154742096506,
+        "mAP": 0.4919387628783087
+      },
+      "parse_failure_pct": 0.0
+    },
+    "proxemics-vlm_no-skeleton_test": {
+      "n_samples": 118,
+      "n_valid": 118,
+      "n_metric_valid": 118,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "exact_match_accuracy": 0.3389830508474576,
+        "acc_hand_touch_hand": 0.7966101694915254,
+        "acc_hand_touch_shoulder": 0.6779661016949152,
+        "acc_shoulder_touch_shoulder": 0.7711864406779662,
+        "acc_hand_touch_elbow": 0.8305084745762712,
+        "acc_elbow_touch_shoulder": 0.8135593220338984,
+        "acc_hand_touch_torso": 0.7457627118644068,
+        "ap_hand_touch_hand": 0.5411859659117885,
+        "f1_hand_touch_hand": 0.6842105263157895,
+        "ap_hand_touch_shoulder": 0.4891194124797662,
+        "f1_hand_touch_shoulder": 0.6481481481481481,
+        "ap_shoulder_touch_shoulder": 0.211864406779661,
+        "f1_shoulder_touch_shoulder": 0.0,
+        "ap_hand_touch_elbow": 0.16101694915254236,
+        "f1_hand_touch_elbow": 0.0,
+        "ap_elbow_touch_shoulder": 0.1864406779661017,
+        "f1_elbow_touch_shoulder": 0.0,
+        "ap_hand_touch_torso": 0.324941841143237,
+        "f1_hand_touch_torso": 0.4827586206896552,
+        "mAP": 0.3190948755721828
+      },
+      "parse_failure_pct": 0.0
+    },
+    "proxemics-vlm_skeleton_test": {
+      "n_samples": 118,
+      "n_valid": 118,
+      "n_metric_valid": 118,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "exact_match_accuracy": 0.3135593220338983,
+        "acc_hand_touch_hand": 0.711864406779661,
+        "acc_hand_touch_shoulder": 0.7288135593220338,
+        "acc_shoulder_touch_shoulder": 0.7711864406779662,
+        "acc_hand_touch_elbow": 0.8220338983050848,
+        "acc_elbow_touch_shoulder": 0.8135593220338984,
+        "acc_hand_touch_torso": 0.7542372881355932,
+        "ap_hand_touch_hand": 0.4626121635094716,
+        "f1_hand_touch_hand": 0.6222222222222222,
+        "ap_hand_touch_shoulder": 0.5241199478487614,
+        "f1_hand_touch_shoulder": 0.673469387755102,
+        "ap_shoulder_touch_shoulder": 0.211864406779661,
+        "f1_shoulder_touch_shoulder": 0.0,
+        "ap_hand_touch_elbow": 0.16101694915254236,
+        "f1_hand_touch_elbow": 0.0,
+        "ap_elbow_touch_shoulder": 0.1864406779661017,
+        "f1_elbow_touch_shoulder": 0.0,
+        "ap_hand_touch_torso": 0.26257734732311006,
+        "f1_hand_touch_torso": 0.35555555555555557,
+        "mAP": 0.30143858209660807
+      },
+      "parse_failure_pct": 0.0
+    },
+    "rldd-omni_test": {
+      "n_samples": 25,
+      "n_valid": 25,
+      "n_metric_valid": 25,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.52,
+        "macro_f1": 0.34210526315789475,
+        "f1_deceptive": 0.0,
+        "f1_truthful": 0.6842105263157895,
+        "auc": 0.5
+      },
+      "parse_failure_pct": 0.0
+    },
+    "urfunny-omni_video-audio_test": {
+      "n_samples": 994,
+      "n_valid": 994,
+      "n_metric_valid": 994,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.5331991951710262,
+        "macro_f1": 0.428169014084507,
+        "f1_funny": 0.18309859154929578,
+        "f1_not_funny": 0.6732394366197183
+      },
+      "parse_failure_pct": 0.0
+    },
+    "urfunny-omni_video-context_test": {
+      "n_samples": 994,
+      "n_valid": 994,
+      "n_metric_valid": 994,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.5915492957746479,
+        "macro_f1": 0.5675852905880336,
+        "f1_funny": 0.46578947368421053,
+        "f1_not_funny": 0.6693811074918566
+      },
+      "parse_failure_pct": 0.0
+    },
+    "vat-omni_frame_test": {
+      "n_samples": 1569,
+      "n_valid": 1569,
+      "n_metric_valid": 1341,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 0.8547,
+      "metrics": {
+        "dist": 0.24824259231426213,
+        "out_of_frame_ap": 0.14301439946474254,
+        "out_of_frame_f1": 0.025974025974025976
+      },
+      "parse_failure_pct": 0.0
+    },
+    "vat-omni_video_test": {
+      "n_samples": 1490,
+      "n_valid": 1490,
+      "n_metric_valid": 919,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 0.6168,
+      "metrics": {
+        "dist": 0.2806168524937885,
+        "out_of_frame_ap": 0.3793982917551808,
+        "out_of_frame_f1": 0.037800687285223365
+      },
+      "parse_failure_pct": 0.0
+    },
+    "videocoattention-vlm_detection_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.6693333333333333,
+        "f1": 0.7270225646670335,
+        "precision": 0.6311514572384138,
+        "recall": 0.8572355613238157
+      },
+      "parse_failure_pct": 0.0
+    },
+    "videocoattention-vlm_localization_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "mean_iou": 0.0835892311044877,
+        "l2_dist": 0.24591198949432075
+      },
+      "parse_failure_pct": 0.0
+    },
+    "vocalsound-omni_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.883,
+        "macro_f1": 0.8842818391540334,
+        "f1_laughter": 0.9620512820512821,
+        "f1_sigh": 0.9123505976095617,
+        "f1_cough": 0.8235294117647058,
+        "f1_throat_clearing": 0.8184818481848185,
+        "f1_sneeze": 0.8820403825717322,
+        "f1_sniff": 0.9072375127420998
+      },
+      "parse_failure_pct": 0.0
+    },
+    "voxconverse-omni_diarization_test": {
+      "n_samples": 2000,
+      "n_valid": 1941,
+      "n_metric_valid": 1941,
+      "n_parse_failures": 59,
+      "format_compliance_rate": 0.9705,
+      "metrics": {
+        "der": 0.30999624131243486,
+        "missed_speech": 0.007159795947318846,
+        "false_alarm": 0.106726619548537,
+        "speaker_confusion": 0.1961098258165796
+      },
+      "parse_failure_pct": 3.0
+    },
+    "voxconverse-omni_speaker-count_test": {
+      "n_samples": 3000,
+      "n_valid": 3000,
+      "n_metric_valid": 3000,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "mae": 0.419,
+        "exact_accuracy": 0.6423333333333333
+      },
+      "parse_failure_pct": 0.0
+    },
+    "meview-omni_test": {
+      "n_samples": 20,
+      "n_valid": 20,
+      "n_metric_valid": 20,
+      "n_parse_failures": 0,
+      "format_compliance_rate": 1.0,
+      "metrics": {
+        "accuracy": 0.2,
+        "macro_f1": 0.1111111111111111,
+        "uar": 0.12222222222222223,
+        "f1_anger": 0.0,
+        "f1_contempt": 0.2222222222222222,
+        "f1_disgust": 0.0,
+        "f1_fear": 0.0,
+        "f1_happy": 0.4444444444444444,
+        "f1_surprise": 0.0
+      },
+      "parse_failure_pct": 0.0
+    }
+  }
+}

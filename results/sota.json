@@ -1,0 +1,159 @@
+{
+  "gazefollow": {
+    "model": "Gaze-LLE",
+    "metric": "avg_dist",
+    "value": 0.099
+  },
+  "vat_frame": {
+    "model": "Gaze-LLE",
+    "metric": "dist",
+    "value": 0.076
+  },
+  "vat_video": {
+    "model": "Gaze-LLE",
+    "metric": "dist",
+    "value": 0.076,
+    "note": "same SOTA as vat_frame"
+  },
+  "vocalsound": {
+    "model": "CLAP",
+    "metric": "accuracy",
+    "value": 0.980,
+    "note": "metric is accuracy (not macro_f1)"
+  },
+  "voxconverse_speaker": {
+    "model": null,
+    "metric": "exact_accuracy",
+    "value": null,
+    "note": "no SOTA referenced in table"
+  },
+  "voxconverse_diarization": {
+    "model": "pyannote",
+    "metric": "der",
+    "value": 0.082
+  },
+  "proxemics": {
+    "model": "Proxemics-net++",
+    "metric": "mAP",
+    "value": 0.738,
+    "note": "applies to both no-skeleton and skeleton variants"
+  },
+  "mmew_au": {
+    "model": "FaceSleuth",
+    "metric": "macro_au_f1",
+    "value": null,
+    "paper": "arXiv:2506.02695v1, Jun 2025",
+    "note": "no SOTA value in table (---)"
+  },
+  "mmew_emotion": {
+    "model": "unknown",
+    "metric": "uar",
+    "value": 0.836,
+    "note": "same SOTA for apex / clip / CoT variants"
+  },
+  "affwild2_au": {
+    "model": "Hierarchical Granularity Alignment SSM",
+    "metric": "macro_au_f1",
+    "value": 0.5945,
+    "note": "metric is macro_au_f1 (not macro_f1)",
+    "paper": "Hierarchical Granularity Alignment and State Space Modeling for Robust Multimodal AU Detection in the Wild"
+  },
+  "affwild2_va": {
+    "model": "Team RAS (10th ABAW)",
+    "metric": "ccc_mean",
+    "value": 0.6695,
+    "paper": "Team RAS in 10th ABAW Competition: Multimodal Valence and Arousal Estimation Approach"
+  },
+  "affwild2_expr": {
+    "model": "Two-Stage Dual-Modality Model",
+    "metric": "macro_f1",
+    "value": 0.5368,
+    "paper": "A Two-Stage Dual-Modality Model for Facial Emotional Expression Recognition"
+  },
+  "msppodcast_vad": {
+    "model": "MSF SER",
+    "metric": "ccc_mean",
+    "value": 0.6852,
+    "extra": {"ccc_valence": 0.759, "ccc_arousal": 0.685},
+    "paper": "MSF SER, ICASSP 2026"
+  },
+  "msppodcast_labels": {
+    "model": "Konkuk-AICV",
+    "metric": "macro_f1",
+    "value": 0.472
+  },
+  "meld": {
+    "model": "Mixture-of-Experts for Multimodal ERC",
+    "metric": "weighted_f1",
+    "value": 0.718,
+    "note": "applies to V+A and V+T variants; audio-only SOTA is 0.601",
+    "paper": "A Mixture-of-Experts Model for Multimodal Emotion Recognition in Conversations"
+  },
+  "meld_audio": {
+    "model": "unknown",
+    "metric": "weighted_f1",
+    "value": 0.601
+  },
+  "emotic_discrete": {
+    "model": "Robust Emotion Recognition in Context Debiasing",
+    "metric": "mAP",
+    "value": 0.3805
+  },
+  "emotic_vad": {
+    "model": "unknown",
+    "metric": "aae_mean",
+    "value": 0.926,
+    "note": "AAE↓ lower=better"
+  },
+  "pisc": {
+    "model": "unknown",
+    "metric": "mAP",
+    "value": 0.805,
+    "note": ""
+  },
+  "videocoatt_detection": {
+    "model": "SAGD",
+    "metric": "accuracy",
+    "value": 0.781,
+    "note": "metric is accuracy (previously f1=0.523 was wrong metric)",
+    "paper": "Nakatani 2026, CVPR Workshop 2026"
+  },
+  "videocoatt_localization": {
+    "model": "SAGD",
+    "metric": "l2_dist",
+    "value": 0.0628,
+    "note": "was 0.628 in table (typo, missing leading 0); SAGD paper value 0.121 may use different eval protocol",
+    "paper": "Nakatani 2026, CVPR Workshop 2026"
+  },
+  "mustard_with_context": {
+    "model": "MuVaC",
+    "metric": "accuracy",
+    "value": 0.774,
+    "note": "metric is accuracy/Acc2 (previously macro_f1=0.880 was wrong metric)",
+    "paper": "MuVaC: A Variational Causal Framework for Multimodal Sarcasm Understanding in Dialogues, WWW2026"
+  },
+  "mustard_no_context": {
+    "model": "MuVaC",
+    "metric": "accuracy",
+    "value": 0.774,
+    "note": "metric is accuracy/Acc2 (previously macro_f1=0.747 was wrong metric)",
+    "paper": "MuVaC: A Variational Causal Framework for Multimodal Sarcasm Understanding in Dialogues, WWW2026"
+  },
+  "urfunny": {
+    "model": "D-HUMOR",
+    "metric": "accuracy",
+    "value": 0.736,
+    "note": "metric is accuracy/Acc2 (previously macro_f1=null)",
+    "paper": "Dark Humor Understanding via Multimodal Open-Ended Reasoning"
+  },
+  "rldd": {
+    "model": "unknown",
+    "metric": "accuracy",
+    "value": 0.964
+  },
+  "meview": {
+    "model": "unknown",
+    "metric": "uar",
+    "value": 0.685
+  }
+}
