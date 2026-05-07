@@ -84,7 +84,7 @@ download_meld() {
     git clone --depth 1 https://github.com/knowledgetechnologyuhh/MELD-FAIR "$dest"
     info "MELD — downloading raw clips (~8 GB)..."
     wget -q --show-progress -O "$dest/MELD.Raw.tar.gz" \
-        "http://web.eecs.umich.edu/~mihalcea/downloads/MELD.Raw.tar.gz"
+        "https://huggingface.co/datasets/declare-lab/MELD/resolve/main/MELD.Raw.tar.gz"
     mkdir -p "$dest/MELD"
     tar -xzf "$dest/MELD.Raw.tar.gz" -C "$dest/MELD"
     rm "$dest/MELD.Raw.tar.gz"
