@@ -121,7 +121,7 @@ dataset/videoattentiontarget/
 ### VideoCoAttention
 **Task:** Localize the shared visual attention target of multiple people, or detect whether one exists.
 
-**Download:** Request via email to lfan@g.ucla.edu — include the statement: *"I promise to use the dataset for non-commercial, academic, and research purposes only."* See [VideoCoAtt GitHub](https://github.com/LifengFan/VideoCoAtt) for details.
+**Download:** Request via email to lfan@g.ucla.edu — include the statement: *"I promise to use the dataset for non-commercial, academic, and research purposes only."* See [VideoCoAtt GitHub](https://github.com/LifengFan/Shared-Attention) for details.
 
 ```
 dataset/VideoCoAtt/VideoCoAtt_Dataset/
@@ -167,7 +167,7 @@ dataset/dataset_proxemics/
 ### MMEW
 **Task:** Recognize micro/macro-expressions from face images or video clips; predict action units.
 
-**Download:** [MMEW Dataset](http://www.dpailab.com/database.html)
+**Download:** [MMEW Dataset](https://github.com/benxianyeteam/MMEW-Dataset?tab=readme-ov-file)
 
 ```
 dataset/MMEW/
@@ -220,7 +220,10 @@ dataset/voxconverse/
 ### MELD
 **Task:** Classify a speaker's emotion from a conversational clip (Friends TV show). Three modality variants: video+audio, audio-only, video+transcript.
 
-**Download:** [MELD-FAIR](https://github.com/facebookresearch/MELD-FAIR) — place in `dataset/MELD-FAIR/`.
+**Download:** [MELD-FAIR](https://github.com/knowledgetechnologyuhh/MELD-FAIR) — place in `dataset/MELD-FAIR/`. The raw videos can be downloaded directly:
+```bash
+wget https://huggingface.co/datasets/declare-lab/MELD/resolve/main/MELD.Raw.tar.gz
+```
 
 ```
 dataset/MELD-FAIR/MELD/realigned/
@@ -236,7 +239,7 @@ dataset/MELD-FAIR/MELD/realigned/
 ### EMOTIC
 **Task:** Given a scene image and a person's bounding box, predict their emotional state (26 categories or VAD scores).
 
-**Download:** [EMOTIC](http://sunai.uoc.edu/emotic/download.html) (requires registration)
+**Download:** [EMOTIC](https://s3.sunai.uoc.edu/emotic/index.html) (requires registration)
 
 ```
 dataset/EMOTIC/
@@ -272,7 +275,7 @@ dataset/PISC/
 ### MSP-Podcast
 **Task:** Classify a speaker's emotion (9 categories) or predict VAD scores from podcast audio.
 
-**Download:** [MSP Lab](https://ecs.utdallas.edu/research/researchlabs/msp-lab/MSP-Podcast.html) (requires registration). Extract `Audios.tar.gz` manually:
+**Download:** [MSP Lab](https://www.lab-msp.com/MSP/MSP-Podcast.html) (requires registration). Extract `Audios.tar.gz` manually:
 
 ```bash
 tar -xzf dataset/msp-podcast/Audios.tar.gz -C dataset/msp-podcast/
