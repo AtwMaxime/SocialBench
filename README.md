@@ -121,7 +121,7 @@ dataset/videoattentiontarget/
 ### VideoCoAttention
 **Task:** Localize the shared visual attention target of multiple people, or detect whether one exists.
 
-**Download:** [VideoCoAtt Dataset](https://github.com/LifengFan/VideoCoAtt)
+**Download:** Request via email to lfan@g.ucla.edu — include the statement: *"I promise to use the dataset for non-commercial, academic, and research purposes only."* See [VideoCoAtt GitHub](https://github.com/LifengFan/VideoCoAtt) for details.
 
 ```
 dataset/VideoCoAtt/VideoCoAtt_Dataset/
@@ -591,7 +591,7 @@ All datasets are used strictly for academic research in accordance with their re
 |---|---|---|
 | GazeFollow | Academic / Public | Public download |
 | VideoAttentionTarget (VAT) | Public (no explicit license stated) | Public download |
-| VideoCoAttention | Public (no explicit license stated) | Dataset no longer publicly hosted; contact original authors |
+| VideoCoAttention | Academic / Non-commercial research only | Request via email to lfan@g.ucla.edu (free for research purposes) |
 | VocalSound | Public / Academic | Public download |
 | Proxemics | Public (no explicit license stated) | Public download |
 | MMEW | Academic (Agreement required) | Registration required |
