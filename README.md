@@ -581,4 +581,30 @@ All datasets share a unified schema:
 
 Bounding boxes follow Qwen's convention: `(x1, y1, x2, y2)` normalized to `[0, 1000]`. Answers are always valid JSON strings.
 
+---
+
+## Dataset Licenses
+
+All datasets are used strictly for academic research in accordance with their respective terms.
+
+| Dataset | License / Terms | Access |
+|---|---|---|
+| GazeFollow | Academic / Public | Public download |
+| VideoAttentionTarget (VAT) | Public (no explicit license stated) | Public download |
+| VideoCoAttention | Public (no explicit license stated) | Dataset no longer publicly hosted; contact original authors |
+| VocalSound | Public / Academic | Public download |
+| Proxemics | Public (no explicit license stated) | Public download |
+| MMEW | Academic (Agreement required) | Registration required |
+| AffWild2 | Academic (Agreement required) | Registration required |
+| VoxConverse | CC BY 4.0 International | Public download |
+| MELD | Academic / Public | Public download |
+| EMOTIC | Academic / Public | Registration required |
+| PISC | Academic / Public | Public download (Zenodo) |
+| MSP-Podcast | Academic License (institution signature required, free of cost) | Registration required |
+| MUStARD | Public | Public download |
+| UR-FUNNY | Public (no explicit license stated) | Public download |
+| RLDD | Academic / Public | Public download |
+| MEVIEW | Public (no explicit license stated) | Contact authors |
+
+The benchmark harness and evaluation code in this repository are released under the **MIT License**.
 
