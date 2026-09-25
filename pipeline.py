@@ -94,6 +94,16 @@ DATASETS = [
         ],
     },
     {
+        "name": "affwild2_av",
+        "required_paths": [_p("dataset", "AffWild2", "ABAW Annotations")],
+        "builder": _p("builders", "affwild2_av_parquet.py"),
+        "checker": _p("checks", "check_affwild2_av.py"),
+        # no test split — use val
+        "test_parquets": [
+            _p("parquets", "affwild2_av", "expr", "affwild2_expr_val.parquet")
+        ],
+    },
+    {
         "name": "voxconverse",
         "required_paths": [_p("dataset", "voxconverse", "dev")],
         "builder": _p("builders", "voxconverse_parquet.py"),
