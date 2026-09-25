@@ -91,7 +91,7 @@ The following 5 datasets require a manual registration or license request and ca
 ### GazeFollow
 **Task:** Given an image and a person's head bounding box, predict where they are looking.
 
-**Download:** [gazefollow_extended.zip](http://gazefollow.csail.mit.edu/download.html)
+**Download:** [GazeFollow](http://gazefollow.csail.mit.edu/download.html) — `data.zip` (original release, extracts to `data_new/`)
 
 ```
 dataset/Gazefollow/data_new/
@@ -153,7 +153,7 @@ dataset/VocalSound_release_16k/
 ### Proxemics
 **Task:** Given an image and two people's bounding boxes, identify which body parts are touching.
 
-**Download:** Contact the authors via the [Proxemics paper](https://arxiv.org/abs/1709.09455)
+**Download:** [dataset_proxemics.zip](https://zenodo.org/records/11184513) (Zenodo, from [Proxemics-Net++](https://doi.org/10.1007/s10044-024-01270-3); original dataset: [Yang et al., CVPR 2012](https://yangyi02.github.io/research/proxemics/index.html)) — place in `dataset/dataset_proxemics/`.
 
 ```
 dataset/dataset_proxemics/
@@ -320,7 +320,7 @@ dataset/UR-FUNNY-V2/
 ### RLDD
 **Task:** Classify whether a person is being deceptive or truthful from real-world video footage.
 
-**Download:** [RLDD](http://web.eecs.umich.edu/~mihalcea/downloads/RealLifeDeceptionDetection.2016.zip) — place in `dataset/RealLifeDeceptionDetection.2016/`.
+**Download:** [RLDD](https://web.eecs.umich.edu/~mihalcea/downloads/RealLifeDeceptionDetection.2016.zip) — place in `dataset/RealLifeDeceptionDetection.2016/`.
 
 ```
 dataset/RealLifeDeceptionDetection.2016/Real-life_Deception_Detection_2016/
@@ -332,7 +332,7 @@ dataset/RealLifeDeceptionDetection.2016/Real-life_Deception_Detection_2016/
 ### MEVIEW *(test-only)*
 **Task:** Identify the concealed emotion revealed by a micro-expression in a short face video.
 
-**Download:** Contact the authors via the [MEVIEW paper](https://arxiv.org/abs/2209.07486) — place in `dataset/MEVIEW/`.
+**Download:** [MEVIEW project page](https://cmp.felk.cvut.cz/~cechj/ME/) (`me-cuts.zip` + `MEVIEW_v2.xlsx`; paper: Husák et al., *Spotting Facial Micro-Expressions "In the Wild"*, CVWW 2017) — place in `dataset/MEVIEW/`.
 
 ```
 dataset/MEVIEW/
@@ -596,18 +596,18 @@ All datasets are used strictly for academic research in accordance with their re
 | VideoAttentionTarget (VAT) | Public (no explicit license stated) | Public download |
 | VideoCoAttention | Academic / Non-commercial research only | Request via email to lfan@g.ucla.edu (free for research purposes) |
 | VocalSound | Public / Academic | Public download |
-| Proxemics | Public (no explicit license stated) | Public download |
+| Proxemics | CC BY 4.0 International (Zenodo release) | Public download (Zenodo) |
 | MMEW | Academic (Agreement required) | Registration required |
 | AffWild2 | Academic (Agreement required) | Registration required |
 | VoxConverse | CC BY 4.0 International | Public download |
 | MELD | Academic / Public | Public download |
 | EMOTIC | Academic / Public | Registration required |
-| PISC | Academic / Public | Public download (Zenodo) |
+| PISC | CC BY 4.0 International | Public download (Zenodo) |
 | MSP-Podcast | Academic License (institution signature required, free of cost) | Registration required |
 | MUStARD | Public | Public download |
 | UR-FUNNY | Public (no explicit license stated) | Public download |
 | RLDD | Academic / Public | Public download |
-| MEVIEW | Public (no explicit license stated) | Contact authors |
+| MEVIEW | Public (no explicit license stated) | Public download |
 
 The benchmark harness and evaluation code in this repository are released under the **MIT License**.
 

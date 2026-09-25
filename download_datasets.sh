@@ -143,7 +143,8 @@ download_rldd() {
     local dest="$DATA_DIR/RealLifeDeceptionDetection.2016"
     [[ -d "$dest/Real-life_Deception_Detection_2016" ]] && { skip "RLDD already present"; return; }
     info "RLDD — downloading (~500 MB)..."
-    wget -q --show-progress -O "$DATA_DIR/rldd.zip" \
+    # web.eecs.umich.edu does not send its intermediate CA cert, so wget can't verify it
+    wget -q --show-progress --no-check-certificate -O "$DATA_DIR/rldd.zip" \
         "https://web.eecs.umich.edu/~mihalcea/downloads/RealLifeDeceptionDetection.2016.zip"
     mkdir -p "$dest"
     unzip -q "$DATA_DIR/rldd.zip" -d "$dest"
@@ -186,13 +187,20 @@ download_pisc() {
 
 download_meview() {
     local dest="$DATA_DIR/MEVIEW"
-    [[ -d "$dest/me-cuts/cuts" ]] && { skip "MEVIEW already present"; return; }
-    info "MEVIEW — downloading (~500 MB)..."
-    mkdir -p "$dest/me-cuts"
-    wget -q --show-progress -O "$DATA_DIR/mecuts.zip" \
-        "https://cmp.felk.cvut.cz/~cechj/ME/me-cuts.zip"
-    unzip -q "$DATA_DIR/mecuts.zip" -d "$dest/me-cuts"
-    rm "$DATA_DIR/mecuts.zip"
+    if [[ -d "$dest/me-cuts/cuts" && -f "$dest/MEVIEW_v2.xlsx" ]]; then
+        skip "MEVIEW already present"; return
+    fi
+    if [[ ! -d "$dest/me-cuts/cuts" ]]; then
+        info "MEVIEW — downloading (~500 MB)..."
+        mkdir -p "$dest/me-cuts"
+        wget -q --show-progress -O "$DATA_DIR/mecuts.zip" \
+            "https://cmp.felk.cvut.cz/~cechj/ME/me-cuts.zip"
+        unzip -q "$DATA_DIR/mecuts.zip" -d "$dest/me-cuts"
+        rm "$DATA_DIR/mecuts.zip"
+    fi
+    # Corrected onset/offset annotations (required by builders/meview_parquet.py)
+    wget -q --show-progress -O "$dest/MEVIEW_v2.xlsx" \
+        "https://cmp.felk.cvut.cz/~cechj/ME/MEVIEW_v2.xlsx"
     info "MEVIEW done → $dest"
 }
 
