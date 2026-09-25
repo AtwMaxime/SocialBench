@@ -232,7 +232,8 @@ def merge_test_parquets(results):
     if not tables:
         print("  [WARN] Nothing to merge.")
         return
-    merged = pa.concat_tables(tables, promote_options="default")
+    # "permissive" widens binary -> large_binary (affwild2_av uses large_binary)
+    merged = pa.concat_tables(tables, promote_options="permissive")
     out = _p("parquets", "benchmark_test.parquet")
     pq.write_table(merged, out)
     print(f"  [OK] {merged.num_rows} total rows → {out}")
